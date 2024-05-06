@@ -1,4 +1,4 @@
-#N canvas 161 25 1200 863 10;
+#N canvas 160 24 1202 865 10;
 #X obj 420 70 v global-bpm;
 #X obj 420 95 v beat-clock;
 #N canvas 564 108 814 718 run-clocks 0;
@@ -111,6 +111,11 @@ outlets;
 #X msg 820 215 symbol six-notes;
 #X text 820 176 To test six note polyphony. There should be a low note
 still playing at the end., f 42;
+#X obj 580 390 s play-seq;
+#X text 580 315 A single note;
+#X msg 580 343 symbol one-note;
+#X obj 600 366 text define -k one-note;
+#A set 0 69 100 3000 \;;
 #X connect 3 0 4 0;
 #X connect 5 0 6 0;
 #X connect 6 0 7 0;
@@ -129,3 +134,4 @@ still playing at the end., f 42;
 #X connect 30 0 34 0;
 #X connect 34 0 23 0;
 #X connect 36 0 29 0;
+#X connect 40 0 38 0;
