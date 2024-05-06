@@ -1,4 +1,4 @@
-#N canvas 172 25 1253 772 12;
+#N canvas 43 -1135 1253 772 12;
 #X obj 456 256 i;
 #X obj 456 226 + 0.4999;
 #X obj 103 379 pack 0 0 0;
@@ -18,7 +18,7 @@
 #X obj 295 488 list prepend all;
 #X obj 295 512 list trim;
 #X obj 460 187 * 3;
-#N canvas 4 50 1060 653 controls 0;
+#N canvas 4 49 1061 655 controls 0;
 #X obj 178 154 r \$1-loadbang;
 #X obj 152 501 outlet;
 #X msg 122 293 gain2 0.8;
@@ -50,7 +50,7 @@
 #X obj 252 252 list prepend rel;
 #X obj 255 187 * 2;
 #X obj 255 211 + 0.01;
-#X obj 313 676 hip~ 5;
+#X obj 333 646 hip~ 5;
 #X obj 464 545 *~;
 #X obj 808 256 sqrt;
 #X obj 808 293 * 12;
@@ -67,20 +67,17 @@
 #X connect 3 0 2 0;
 #X connect 3 1 2 1;
 #X connect 3 2 2 2;
-#X connect 4 0 24 0;
+#X connect 4 0 14 0;
+#X connect 4 0 15 0;
 #X connect 7 0 3 0;
 #X connect 7 0 12 0;
 #X connect 16 0 17 0;
-#X connect 17 0 4 2;
 #X connect 18 0 1 0;
 #X connect 19 0 16 0;
 #X connect 20 0 16 0;
 #X connect 21 0 16 0;
 #X connect 22 0 23 0;
 #X connect 23 0 21 0;
-#X connect 24 0 14 0;
-#X connect 24 0 15 0;
-#X connect 25 0 4 1;
 #X connect 26 0 27 0;
 #X connect 27 0 30 0;
 #X connect 28 0 31 0;
