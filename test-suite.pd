@@ -1,4 +1,4 @@
-#N canvas 371 -1112 1202 865 10;
+#N canvas 91 -1011 1202 865 10;
 #X obj 420 70 v global-bpm;
 #X obj 420 95 v beat-clock;
 #N canvas 564 108 814 718 run-clocks 0;
