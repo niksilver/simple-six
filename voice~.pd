@@ -1,5 +1,5 @@
-#N canvas 485 -964 1275 488 12;
-#X text 301 18 note;
+#N canvas 533 -956 1275 488 12;
+#X text 337 15 note;
 #X obj 383 182 list prepend gain;
 #X obj 440 135 list prepend gate;
 #X obj 303 347 list trim;
@@ -39,9 +39,10 @@
 #X obj 30 79 mtof;
 #X obj 806 40 r X-inlet;
 #X obj 680 83 r X-inlet~;
-#X obj 256 19 r X-inlet;
+#X obj 256 17 r X-inlet;
 #X obj 372 445 s~ X-outlet~;
 #X obj 36 331 outlet~;
+#X obj 73 124 print VOICE_\$1;
 #X connect 1 0 15 0;
 #X connect 2 0 15 0;
 #X connect 3 0 25 0;
@@ -77,6 +78,7 @@
 #X connect 28 0 18 0;
 #X connect 29 0 41 0;
 #X connect 30 0 31 0;
+#X connect 30 0 43 0;
 #X connect 31 0 37 0;
 #X connect 31 1 32 0;
 #X connect 32 0 36 1;
