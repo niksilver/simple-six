@@ -1,4 +1,4 @@
-#N canvas 64 -1049 1202 865 10;
+#N canvas 81 -209 1203 866 10;
 #X obj 420 70 v global-bpm;
 #X obj 420 95 v beat-clock;
 #N canvas 564 108 814 718 run-clocks 0;
@@ -157,7 +157,7 @@ still playing at the end., f 42;
 #000000 1 1;
 #X obj 820 395 s play-seq;
 #X text 820 320 Three note chord;
-#X msg 820 348 symbol three-note-chord;
+#X msg 820 350 symbol three-note-chord;
 #X obj 840 371 text define -k three-note-chord;
 #A set 0 65 100 1000 \; 0 69 100 1000 \; 0 72 100 1000 \;;
 #X obj 330 515 metro 150;
