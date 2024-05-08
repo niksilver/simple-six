@@ -1,4 +1,4 @@
-#N canvas 81 -209 1203 866 10;
+#N canvas 89 -1064 1204 866 10;
 #X obj 420 70 v global-bpm;
 #X obj 420 95 v beat-clock;
 #N canvas 564 108 814 718 run-clocks 0;
@@ -51,13 +51,13 @@
 #X connect 25 0 13 0;
 #X connect 26 0 22 0;
 #X restore 420 40 pd run-clocks;
-#X floatatom 240 183 5 1 270 0 - - -, f 5;
-#X obj 240 210 s global-bpm;
-#X obj 350 130 r beat-clock;
-#X obj 350 155 select 0;
-#X obj 350 180 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#X floatatom 310 183 5 1 270 0 - - -, f 5;
+#X obj 310 210 s global-bpm;
+#X obj 420 130 r beat-clock;
+#X obj 420 155 select 0;
+#X obj 420 180 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
-#X obj 240 155 f 60;
+#X obj 310 155 f 60;
 #X msg 580 215 symbol seq1;
 #X obj 600 238 text define -k seq1;
 #A set 0 69 100 1000 \; 1300 53 60 500;
@@ -68,7 +68,7 @@
 #000000;
 #X text 70 200 For our module;
 #X obj 50 240 s loadbang-ext;
-#X obj 240 128 r loadbang-ext;
+#X obj 310 128 r loadbang-ext;
 #X obj 50 446 module s1;
 #X obj 200 500 r notesOut-s1;
 #X obj 70 176 s loadbang-s1;
@@ -161,6 +161,10 @@ still playing at the end., f 42;
 #X obj 840 371 text define -k three-note-chord;
 #A set 0 65 100 1000 \; 0 69 100 1000 \; 0 72 100 1000 \;;
 #X obj 330 515 metro 150;
+#X obj 320 273 r loadbang-ext;
+#X obj 320 300 f 1;
+#X floatatom 320 330 5 1 270 0 - - -, f 5;
+#X obj 320 357 s knob1-s1;
 #X connect 3 0 4 0;
 #X connect 5 0 6 0;
 #X connect 6 0 7 0;
@@ -186,3 +190,6 @@ still playing at the end., f 42;
 #X connect 46 0 45 1;
 #X connect 49 0 47 0;
 #X connect 51 0 45 0;
+#X connect 52 0 53 0;
+#X connect 53 0 54 0;
+#X connect 54 0 55 0;
