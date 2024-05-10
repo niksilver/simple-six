@@ -97,7 +97,7 @@ it as that seems to help avoid glitches., f 26;
 #X text 500 110 Wave shape;
 #X obj 500 250 list prepend all;
 #X obj 500 274 list trim;
-#X obj 500 182 expr pow(($f1*0.8)+ 0.7 \, 8);
+#X obj 500 170 expr pow(($f1*0.8)+ 0.7 \, 8);
 #X connect 2 0 7 0;
 #X connect 2 0 24 0;
 #X connect 11 0 12 0;
