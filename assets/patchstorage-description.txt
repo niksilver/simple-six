@@ -1,0 +1,7 @@
+A simple synth for the 201 Pocket Piano, lightweight enough that it can handle six voice polyphony.
+
+- Knob 1 = sustain;
+- Knob 2 = wave shape (square-ish to sine to pulse-ish);
+- Knob 3 = release.
+
+Image by Thomas Hawk: https://www.flickr.com/photos/thomashawk/2705771232/
